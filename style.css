@@ -1,0 +1,710 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: absolute;
+}
+
+nav a{
+    margin: 5px;
+    position: relative;
+    top: 30%;
+    left: 20px;
+  margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #A5CC82;
+}
+nav a:hover{
+    color: #414141;
+    left: 5px;
+    transition: all 2s ease-in;
+}
+
+.intro{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,#00467F,#A5CC82);
+}
+.intro-content{
+    display: flex;
+}
+.intro-content-left{
+    flex: 1;
+}
+.intro-content-left h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #F6D55C;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: uppercase;
+    position:absolute;
+    top: 20%;
+    left: 5%;
+    width: 50%;
+    z-index: 1;
+}
+.intro-content-right{
+    flex: 1;
+    object-fit: cover;
+     height: 150%;
+     width: 100%;
+}
+.intro-content-right img{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+ object-fit: cover;
+    width: 100%;
+    height: 200%;
+}
+.intro-content-left p{
+    position: relative;
+    top: 100%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A5CC82;
+    text-transform: lowercase;
+}
+
+@media(max-width:1082px){
+.intro-content-left h1{
+    font-size: 40px;
+    margin-top: 15%;
+}
+.intro-content-left p{
+    margin-top: 10%;
+}
+.blog-card{
+    width: 250px;
+}
+.blog-content{
+    margin-left: -5%;
+}
+}
+@media(max-width: 992px){
+.intro-content-left p{
+    margin-top: 10%;
+}
+.intro-content-right img{
+    margin-top: 20%;
+}
+}
+@media(max-width:768px){
+.intro-content-left p{
+    
+    margin-top: 20%;
+}
+.intro-content-right img{
+    margin-top: 30%;
+    height: 300px;
+}
+.info p.info-title{
+    margin-top: 40%;
+    font-size: 60px;
+    
+}
+.carousel-item{
+    height: 200px;
+}
+.services-left h1{
+    margin-top: -30%;
+}
+.services-right h1{
+    margin-left: -18%;
+    font-size: 10px;
+}
+.blog{
+    height: 200vh;
+}
+.blog-card:nth-child(1)
+{
+    margin-left: 30%;
+}
+.blog-card:nth-child(2)
+{
+    margin-top: 30%;
+    margin-left: -30%;
+}
+.blog-card:nth-child(3){
+  
+   margin-top: 60%;
+   margin-left: -30%;
+
+}
+.blog button{
+    margin-top: 50%;
+}
+.contact{
+    height: 200vh;
+    margin-top: 50%;
+}
+}
+@media(max-width:700px)
+{
+    .services-right h1{
+        font-size: 10%;
+        margin-left: -15%;
+        width: 150px;
+    }
+    .blog{
+        margin-top: 10%;
+    }
+    .testimonial{
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-content-left textarea{
+        margin-top: 50%;
+     margin-left: -40%;
+    }
+}
+@media(max-width:600px){
+.intro-content-left h1{
+    font-size: 30px;
+}
+}
+@media(max-width:480px){
+.info p.info-title{
+    margin-top: 20%;
+    font-size: 20px;
+}
+.services-left h1{
+    margin-top: 20%;
+}
+.services-left button{
+    margin-top: -10%;
+}
+.contact-content-left textarea{
+    margin-top: 40%;
+}
+.contact-links{
+    width: 50px;
+}
+.contact-information{
+    margin-left: -10%;
+}
+.blog-card:nth-child(3){
+    margin-top: 70%;
+}
+}
+/* intro end */
+
+/* about start */
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.about-left{
+    flex: 1;
+}
+.about-left h1{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    color: #F6D55C;
+    z-index: 1;
+    text-transform: uppercase;
+    width: 150%;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-left p{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A5CC82;
+    position: relative;
+}
+.about-left button{
+    width: 150px;
+height: 50px;
+border: 1px solid #A5CC82;
+position: relative;
+left: 20px;
+top: 80px;
+background-color: #A5CC82;
+
+}
+.about-left button a{
+    color: #00467F;
+}
+.about-left button a:hover{
+    color: #A5CC82;
+}
+.about-left button a{
+    text-decoration: none;
+}
+.about-left button:hover{
+border-radius: 10px;
+background-color: #00467F;
+color: #A5CC82;
+transition: all 1s ease-out;
+} 
+.about-right{
+    flex: 1;
+}
+.about-right img{
+    width: 100%;
+    height: 100%;
+object-fit: cover;}
+
+/* about end */
+/* info start */
+.info{
+    width: 100%;
+    height: 100vh;
+background-color: #A5CC82;
+}
+.info p{
+    position: relative;
+    width: 100%;
+    top: 20%;
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00467F;
+}
+/* info end */
+/* services start */
+.services{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.services-left{
+    flex: 1;
+}
+.services-right{
+    flex: 1;
+    background-color: #F6D55C;
+}
+.services-left h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #F6D55C;
+    font-family: 'Balsamiq Sans', cursive;
+    position: relative;
+    left: 20%;
+    top: 40%;
+    width: 50%;
+}
+.services-left button{
+    width: 100px;
+    height: 50px;
+    border: 1px solid #00467F;
+    background-color: #00467F;
+    color: #A5CC82;
+    position: relative;
+left: 50%;
+top: 50%;
+}
+.services-left button a{
+    text-decoration: none;
+    color: #A5CC82;
+}
+.services-left button:hover{
+    width: 150px;
+    height: 60px;
+    transition: all 1s ease-in-out;
+}
+
+.services-right h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #173F5F;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    text-transform: lowercase;
+    left: 20%;
+    top: 20%;
+}
+.services-right p{
+    position: relative;
+    color: #00467F;
+    left: 30%;
+    top: 30%;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.services-right h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00467F;
+}
+
+.services-right h1:hover{
+   color: #414141;
+}
+.services-right p:hover{
+    
+    margin-left: 10px;
+ 
+    transition: all 1s ease;
+}
+.service-scroll{
+    height: 100vh;
+    display: grid;
+    overflow-y: hidden;
+}
+.service-scroll-content{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 350%;
+    display: grid;
+    overflow: hidden;
+}
+.next-service{
+    width: 50px;
+    height: 50px;
+    background-color: #414141;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.service-scroll-content h1{
+    position: relative;
+    overflow-y: hidden;
+    top: 20%;
+    left: 10%;
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.services-buttons{
+    display: flex;
+}
+.prev-service{
+    width: 50px;
+    height: 50px;
+    background-color: #414141;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+/* services end */
+/* testimonial start */
+.testimonial{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.testimonial-left{
+    flex: 1;
+}
+.testimonial-left h1{
+    font-size: 20px;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #A5CC82;
+
+    text-transform:capitalize;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.testimonial-right{
+    flex: 1;
+}
+.testimonial-right h1{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #A5CC82;
+    
+    text-transform: capitalize;
+    top: 20%;
+position: relative;
+    left: 30%;
+}
+.testimonial-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    left: 20px;
+    top: 20%;
+}
+.testimonial-left .testimonial-container  img{
+    width: 100px;
+    height: 110px;
+}
+
+.testimonial-content{
+    width: 800px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    left: 20%;
+    top: 20%;
+    
+}
+.quote{
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+.testimonial-right button span{
+    background-color:#A5CC82;
+    border-radius: 50px;
+}
+.carousel-item{
+    position: relative;
+    top: 100px;
+    height: 70vh;
+    width: 250px;
+}
+.carousel-item h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00467F;
+    width: 70%;
+    left: 20%;
+    position: relative;
+}
+.carousel-item p{
+    position: relative;
+    left: 40%;
+    top: 20%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #A5CC82;
+}
+.carousel-item span{
+    position: relative;
+    left: 40%;
+    top: 20%;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#F6D55C;
+}
+/* testimonial end */
+/* blog start */
+.blog{
+    width: 100%;
+    height: 100vh;
+}
+.blog-content{
+    height: 50vh;
+    display: flex;
+    position: relative;
+    left: 5%;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    position:relative;
+    width: 30%;
+    height: 120%;
+    margin: 10px;
+}
+
+.blog-card-header a img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.blog h1{
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F6D55C;
+}
+.blog p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #f53817;
+    text-transform: lowercase;
+}
+.blog button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #173F5F;
+    background-color: #173F5F;
+    position: relative;
+    left: 45%;
+    top: 20%;
+}
+.blog  button a{
+    text-decoration: none;
+    color: #F6D55C;
+}
+.blog button:hover{
+ background-color: #F6D55C;
+ border: 1px solid #F6D55C;
+ color: #173F5F;
+ border-radius: 20px;
+ transition: 1s ease;
+}
+.blog button a:hover{
+    color: #173F5F;
+}
+.blog-card-body p{
+    font-size: 15px;
+color: #A5CC82;
+}
+.blog-card-body h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #00467F;
+}
+/* blog end */
+/* contact start */
+.contact{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.contact-content{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.contact-content-left{
+    flex: 2;
+    
+}
+.contact-content-left h1{
+    font-size: 25px;
+    position: relative;
+    left: 10%;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F6D55C;
+}
+.contact-content-left input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+     position: relative;
+    left: 20px;
+    top: 50px;
+    display: grid;
+    margin-top: 20px;
+}
+.contact-content-left input::placeholder{
+    color: #414141;
+    font-size: 25px;
+    opacity: 0.5;
+    font-weight: 700;
+}
+.contact-content-left textarea::placeholder{
+    color: #414141;
+    font-size: 25px;
+    opacity: 0.5;
+    font-weight: 700;
+}
+.contact-content-left textarea{
+    width: 250px;
+    height: 50px;
+    position: relative;
+    border: none;
+    outline: none;
+    left: 50%;
+    bottom: 20%;
+    
+}
+.contact-content-left label{
+    position: relative;
+    text-transform: lowercase;
+    left: 20px;
+    top: 50px;
+    font-weight: 600;
+    color: #173F5F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+}
+.contact-content-left button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #A5CC82;
+    background-color: #A5CC82;
+    color: #173F5F;
+   position: relative;
+  left: 20%;
+  bottom: 10%;
+   cursor: pointer;
+   max-width: 250px;
+}
+.contact-content-right{
+    flex: 1;
+    background-color: #173F5F;
+}
+.contact-content-right p{
+    color: #F6D55C;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    position: relative;
+    left: 20%;
+}
+.contact-information{
+
+    position: relative;
+}
+.contact-information  span{
+    font-weight: 500;
+}
+.contact-agency{
+    top: 10%;
+    position: relative;
+}
+.contact-agency p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.contact-agency span{
+    font-size: 13px;
+    color:#ED553B;
+}
+.contact-footer{
+    background-color: #173F5F;
+    height: 20vh;
+    position: relative;
+    top: 15%;
+}
+.contact-footer h1{
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contact-links{
+    position: relative;
+    top: 5%;
+    left: 20%;
+    
+}
+.contact-links i{
+    margin: 10px;
+}
+/* contact end */
